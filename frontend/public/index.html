@@ -680,7 +680,11 @@
   </div>
 
   <script>
-    const API_URL = "http://localhost:5001/resumeAI";
+    // Detect environment and set API URL accordingly
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const API_URL = isLocalhost 
+      ? "http://localhost:5001/resumeAI"
+      : `${window.location.origin}/api/resumeAI`;
 
     document.getElementById("uploadArea").addEventListener("click", () => {
       document.getElementById("resumeFile").click();

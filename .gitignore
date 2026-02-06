@@ -26,10 +26,18 @@ pnpm-debug.log*
 dist/
 build/
 .next/
+lib/
+*.js
+*.js.map
+
+# Vercel
+.vercel/
+.vercelignore
 
 # Firebase
 .firebaserc
 firebase-debug.log
+.firebase/
 
 # OS
 Thumbs.db
@@ -43,3 +51,4 @@ coverage/
 # Temporary files
 *.tmp
 *.bak
+

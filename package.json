@@ -1,0 +1,19 @@
+{
+  "name": "ats-resume-checker",
+  "version": "1.0.0",
+  "description": "AI-powered ATS resume checker and optimizer",
+  "private": true,
+  "scripts": {
+    "build": "cd function && npm install && npm run build",
+    "dev": "cd function && node server.js",
+    "start": "cd function && node server.js"
+  },
+  "keywords": [
+    "resume",
+    "ats",
+    "ai",
+    "optimizer"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

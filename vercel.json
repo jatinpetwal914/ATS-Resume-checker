@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "buildCommand": "cd function && npm install && npm run build",
+  "env": {
+    "OPENAI_API_KEY": "@openai-api-key",
+    "GEMINI_API_KEY": "@gemini-api-key"
+  },
+  "rewrites": [
+    {
+      "source": "/api/resumeAI",
+      "destination": "/api/resumeAI"
+    },
+    {
+      "source": "/api/health",
+      "destination": "/api/health"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/public/index.html"
+    }
+  ]
+}
