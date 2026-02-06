@@ -1,1 +1,13 @@
-{\n  \"version\": 2,\n  \"buildCommand\": \"npm run build:all\",\n  \"env\": {\n    \"OPENAI_API_KEY\": \"@openai-api-key\",\n    \"GEMINI_API_KEY\": \"@gemini-api-key\"\n  },\n  \"public\": \"frontend/public\",\n  \"rewrites\": [\n    {\n      \"source\": \"/((?!api/).*)\",\n      \"destination\": \"/frontend/public/index.html\"\n    }\n  ]\n}
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/frontend/public/index.html"
+    }
+  ]
+}
