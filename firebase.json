@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": "frontend/public",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "resumeAI"
+      }
+    ]
+  },
+  "functions": {
+    "source": "function",
+    "runtime": "nodejs18"
+  }
+}

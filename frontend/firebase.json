@@ -1,0 +1,22 @@
+{
+  "hosting": [
+    {
+      "target": "main-site",
+      "public": "public"
+    },
+    {
+      "target": "resume-stdhub-site",
+      "public": "frontend/public",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": "resumeAI"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs18"
+  }
+}
