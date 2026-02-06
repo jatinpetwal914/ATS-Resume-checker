@@ -5,8 +5,10 @@
   "private": true,
   "scripts": {
     "build": "cd function && npm install && npm run build",
+    "build:all": "npm install && cd function && npm install && npm run build",
     "dev": "cd function && node server.js",
-    "start": "cd function && node server.js"
+    "start": "cd function && node server.js",
+    "build:function": "cd function && npm install && npm run build"
   },
   "keywords": [
     "resume",

@@ -1,10 +1,10 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
-import { uploadResume } from "../function/src/uploadResume";
-import { parseResume } from "../function/src/parseResume";
-import { analyzeATS } from "../function/src/analyzeATS";
-import { aiImprove } from "../function/src/aiImprove";
-import { generateResume } from "../function/src/generateResume";
-import { ResumeAnalysisRequest, ResumeAnalysisResponse } from "../function/src/shared/types";
+import { uploadResume } from "../function/lib/function/src/uploadResume";
+import { parseResume } from "../function/lib/function/src/parseResume";
+import { analyzeATS } from "../function/lib/function/src/analyzeATS";
+import { aiImprove } from "../function/lib/function/src/aiImprove";
+import { generateResume } from "../function/lib/function/src/generateResume";
+import { ResumeAnalysisRequest, ResumeAnalysisResponse } from "../function/lib/function/src/shared/types";
 
 export default async (req: VercelRequest, res: VercelResponse): Promise<void> => {
   // Set CORS headers
